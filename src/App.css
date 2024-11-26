@@ -1,0 +1,97 @@
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d4b880, #ffffff);
+}
+
+/* Reset mặc định */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout chung */
+body {
+  background: linear-gradient(to bottom, #d4b880, #ffffff);
+}
+
+.container {
+  max-width: 1200px; /* Độ rộng tối đa trên desktop */
+  margin: 0 auto; /* Căn giữa nội dung */
+  background-color: #fff; /* Màu nền của nội dung */
+  border: 1px solid #d4b880; /* Đường viền nhẹ */
+  border-radius: 5px; /* Bo góc */
+  min-height: 1000px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: #ffffff;
+  color: #4a3b0d;
+  padding: 30px 0;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 3px solid #a97b48;
+  background-image: url("Images/bg_banner.gif");
+  background-size: cover;
+  text-shadow: 2px 2px 0px #ffffff,
+    /* Viền trắng phía dưới bên phải */ -2px -2px 0px #ffffff,
+    /* Viền trắng phía trên bên trái */ -2px 2px 0px #ffffff,
+    /* Viền trắng phía dưới bên trái */ 2px -2px 0px #ffffff; /* Viền trắng phía trên bên phải */
+}
+
+/* Nội dung */
+.content {
+  padding: 5px;
+}
+
+.tree-view {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.tree-view ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.tree-view li {
+  margin-bottom: 5px;
+}
+
+.bg_title_news {
+  font-size: 11px;
+  font-family: Tahoma;
+  color: #6d3b08;
+  background-repeat: repeat-x;
+  height: 23px;
+  padding-top: 1px;
+  padding-left: 5px;
+  border: 1px solid #d4b880; /* Đường viền nhẹ */
+  font-weight: bold;
+  text-transform: uppercase;
+  align-content: center;
+  background-color: #f8ebb4;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Chiếm toàn bộ màn hình trên thiết bị di động */
+    border: none; /* Loại bỏ đường viền */
+  }
+
+  .header {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  .tree-view {
+    font-size: 12px;
+  }
+}
