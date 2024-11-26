@@ -33,15 +33,21 @@ const PersonDetail = () => {
         <p>
           <strong>Tên:</strong> {person.name || "Không có"}
         </p>
+        {person.details && person.details.h && (
+          <p>
+            <strong>Chồng:</strong> {person.details.h}
+          </p>
+        )}
+        {person.details && person.details.w && (
+          <p>
+            <strong>Vợ:</strong> {person.details.w}
+          </p>
+        )}
         <p>
           <strong>Năm sinh:</strong> {person.details?.born || "Không có"}
         </p>
         <p>
           <strong>Giới tính:</strong> {person.details?.gender || "Không có"}
-        </p>
-        <p>
-          <strong>Vợ/Chồng:</strong>{" "}
-          {person.details?.w || person.details?.h || "Không có"}
         </p>
         <p>
           <strong>Địa chỉ:</strong>{" "}
