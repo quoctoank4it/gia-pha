@@ -145,9 +145,8 @@ const FamilyTree = () => {
             gender: "Nam",
             born: "1600",
             status: "",
-            w_h: "",
             additionalInfo: "",
-            h: "Trần Thị Tây Nguyên",
+            w: "Trần Thị Tây Nguyên",
           },
           children: [
             {
@@ -183,9 +182,33 @@ const FamilyTree = () => {
             Đời t{node.id.split("_").length}:
           </span>{" "}
           {node.name}
-          {node.details && node.details.h && <span> - {node.details.h}</span>}
-          {node.details && node.details.w && <span> - {node.details.w}</span>}
         </div>
+        {node.details && node.details.h && (
+          <div
+            style={{
+              cursor: "pointer",
+              color: "black",
+            }}
+            onClick={toggleExpand}
+          >
+            <img src={FaceImg} style={{ marginRight: 5, marginLeft: 18 }}></img>
+            <span style={{ color: "red" }}>Chồng:</span>{" "}
+            <span>{node.details.h}</span>
+          </div>
+        )}
+        {node.details && node.details.w && (
+          <div
+            style={{
+              cursor: "pointer",
+              color: "black",
+            }}
+            onClick={toggleExpand}
+          >
+            <img src={FaceImg} style={{ marginRight: 5, marginLeft: 18 }}></img>
+            <span style={{ color: "red" }}>Vợ:</span>{" "}
+            <span>{node.details.w}</span>
+          </div>
+        )}
 
         <div>
           {node.children.map((child) => (

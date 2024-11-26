@@ -24,7 +24,7 @@ body {
   background-color: #fff; /* Màu nền của nội dung */
   border: 1px solid #d4b880; /* Đường viền nhẹ */
   border-radius: 5px; /* Bo góc */
-  min-height: 1000px;
+  min-height: 900px;
 }
 
 /* Header */
