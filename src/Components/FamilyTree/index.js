@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import TreeImg from "../../Images/tree.gif";
 import FaceImg from "../../Images/face.jpg";
+import { useNavigate } from "react-router-dom";
 
 const FamilyTree = () => {
-  // Dữ liệu cây gia phả
-
   const familyData = [
     {
       id: "1",
@@ -162,9 +161,11 @@ const FamilyTree = () => {
 
   // Component hiển thị đệ quy
   const TreeNode = ({ node }) => {
-    const [isExpanded, setIsExpanded] = useState(true); // Trạng thái mở/đóng của node
+    const navigate = useNavigate();
 
-    const toggleExpand = () => setIsExpanded(!isExpanded); // Toggle mở/đóng
+    const handleClick = (id) => {
+      navigate(`/${id}`);
+    };
 
     return (
       <div style={{ marginLeft: "20px", marginTop: "5px" }}>
@@ -174,7 +175,7 @@ const FamilyTree = () => {
             cursor: "pointer",
             color: "black",
           }}
-          onClick={toggleExpand}
+          onClick={() => handleClick(node.id)}
         >
           <img src={TreeImg}></img>
           <img src={FaceImg} style={{ marginRight: 5 }}></img>
@@ -183,13 +184,12 @@ const FamilyTree = () => {
           </span>{" "}
           {node.name}
         </div>
-        {node.details && node.details.h && (
+        {/* {node.details && node.details.h && (
           <div
             style={{
               cursor: "pointer",
               color: "black",
             }}
-            onClick={toggleExpand}
           >
             <img src={FaceImg} style={{ marginRight: 5, marginLeft: 18 }}></img>
             <span style={{ color: "red" }}>Chồng:</span>{" "}
@@ -202,13 +202,12 @@ const FamilyTree = () => {
               cursor: "pointer",
               color: "black",
             }}
-            onClick={toggleExpand}
           >
             <img src={FaceImg} style={{ marginRight: 5, marginLeft: 18 }}></img>
             <span style={{ color: "red" }}>Vợ:</span>{" "}
             <span>{node.details.w}</span>
           </div>
-        )}
+        )} */}
 
         <div>
           {node.children.map((child) => (
@@ -220,10 +219,13 @@ const FamilyTree = () => {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      {familyData.map((rootNode) => (
-        <TreeNode key={rootNode.id} node={rootNode} />
-      ))}
+    <div className="content">
+      <div className="bg_title_news">Cây Gia Phả</div>
+      <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
+        {familyData.map((rootNode) => (
+          <TreeNode key={rootNode.id} node={rootNode} />
+        ))}
+      </div>
     </div>
   );
 };

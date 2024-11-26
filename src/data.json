@@ -1,0 +1,217 @@
+{
+	"data": [
+		{
+			"id": "1",
+			"name": "Diệp Minh",
+			"details": {
+				"gender": "Nam",
+				"born": "1954",
+				"status": "",
+				"additionalInfo": "",
+				"w": "Võ Thị Phương Anh"
+			},
+			"children": [
+				{
+					"id": "2_1",
+					"name": "Diệp Quốc Phú",
+					"details": {
+						"gender": "Nam",
+						"born": "1977",
+						"status": "",
+						"additionalInfo": "",
+						"w": "Phạm Thị Len"
+					},
+					"children": [
+						{
+							"id": "2_1_1",
+							"name": "Diệp Thị Như Ngọc",
+                            "details": {
+                                "gender": "Nữ",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						},
+						{
+							"id": "2_1_2",
+							"name": "Diệp Quốc Bi",
+                            "details": {
+                                "gender": "Nam",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2_2",
+					"name": "Diệp Quốc Thọ",
+					"details": {
+						"gender": "Nam",
+						"born": "1979",
+						"status": "",
+						"additionalInfo": "",
+						"w": "Dương Thị Thân"
+					},
+					"children": [
+						{
+							"id": "2_2_1",
+							"name": "Diệp Dương Thị Thu Thủy",
+                            "details": {
+                                "gender": "Nữ",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						},
+						{
+							"id": "2_2_2",
+							"name": "Diệp Quốc Bình",
+                            "details": {
+                                "gender": "Nam",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2_3",
+					"name": "Diệp Quốc Quang",
+					"details": {
+						"gender": "Nam",
+						"born": "1981",
+						"status": "",
+						"additionalInfo": "",
+						"w": "Duyên"
+					},
+					"children": [
+						{
+							"id": "2_3_1",
+							"name": "Diệp Quốc Ben",
+                            "details": {
+                                "gender": "Nam",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2_4",
+					"name": "Diệp Quốc Trung",
+					"details": {
+						"gender": "Nam",
+						"born": "1984",
+						"status": "",
+						"additionalInfo": "",
+						"w": "Lê"
+					},
+					"children": [
+						{
+							"id": "2_4_1",
+							"name": "Diệp Thị Giao",
+                            "details": {
+                                "gender": "Nữ",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						},
+						{
+							"id": "2_4_2",
+							"name": "Diệp Chim Ri",
+                            "details": {
+                                "gender": "Nữ",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2_5",
+					"name": "Diệp Thị Lệ Thu",
+					"details": {
+						"gender": "Nữ",
+						"born": "1986",
+						"status": "",
+						"additionalInfo": "",
+						"h": "Hà"
+					},
+					"children": [
+						{
+							"id": "2_5_2",
+							"name": "Bé Thư",
+                            "details": {
+                                "gender": "Nữ",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						},
+						{
+							"id": "2_5_1",
+							"name": "Ku Ken",
+                            "details": {
+                                "gender": "Nam",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2_6",
+					"name": "Diệp Quốc Thanh",
+                    "details": {
+                        "gender": "Nam",
+                        "born": "1989",
+                        "status": "",
+                        "additionalInfo": ""
+                    },
+					"children": []
+				},
+				{
+					"id": "2_7",
+					"name": "Diệp Quốc Toàn",
+                    "gender": "Nam",
+					"details": {
+						"gender": "Nam",
+						"born": "1991",
+						"status": "",
+						"additionalInfo": "",
+						"w": "Trần Thị Tây Nguyên"
+					},
+					"children": [
+						{
+							"id": "2_7_1",
+							"name": "Har Đích Thúi",
+                            "details": {
+                                "gender": "Nam",
+                                "born": "1600",
+                                "status": "",
+                                "additionalInfo": ""
+                            },
+							"children": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
