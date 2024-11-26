@@ -15,11 +15,20 @@ const FamilyTree = () => {
         status: "",
         w_h: "",
         additionalInfo: "",
+        w: "Võ Thị Phương Anh",
       },
       children: [
         {
           id: "2_1",
           name: "Diệp Quốc Phú",
+          details: {
+            gender: "Nam",
+            born: "1600",
+            status: "",
+            w_h: "",
+            additionalInfo: "",
+            w: "Phạm Thị Len",
+          },
           children: [
             {
               id: "2_1_1",
@@ -36,6 +45,14 @@ const FamilyTree = () => {
         {
           id: "2_2",
           name: "Diệp Quốc Thọ",
+          details: {
+            gender: "Nam",
+            born: "1600",
+            status: "",
+            w_h: "",
+            additionalInfo: "",
+            w: "Dương Thị Thân",
+          },
           children: [
             {
               id: "2_2_1",
@@ -52,6 +69,14 @@ const FamilyTree = () => {
         {
           id: "2_3",
           name: "Diệp Quốc Quang",
+          details: {
+            gender: "Nam",
+            born: "1600",
+            status: "",
+            w_h: "",
+            additionalInfo: "",
+            w: "Duyên",
+          },
           children: [
             {
               id: "2_3_1",
@@ -63,6 +88,14 @@ const FamilyTree = () => {
         {
           id: "2_4",
           name: "Diệp Quốc Trung",
+          details: {
+            gender: "Nam",
+            born: "1600",
+            status: "",
+            w_h: "",
+            additionalInfo: "",
+            w: "Lê",
+          },
           children: [
             {
               id: "2_4_1",
@@ -79,6 +112,14 @@ const FamilyTree = () => {
         {
           id: "2_5",
           name: "Diệp Thị Lệ Thu",
+          details: {
+            gender: "Nam",
+            born: "1600",
+            status: "",
+            w_h: "",
+            additionalInfo: "",
+            h: "Hà",
+          },
           children: [
             {
               id: "2_5_1",
@@ -100,10 +141,18 @@ const FamilyTree = () => {
         {
           id: "2_7",
           name: "Diệp Quốc Toàn",
+          details: {
+            gender: "Nam",
+            born: "1600",
+            status: "",
+            w_h: "",
+            additionalInfo: "",
+            h: "Trần Thị Tây Nguyên",
+          },
           children: [
             {
               id: "2_7_1",
-              name: "Har Đít Thúi",
+              name: "Har Đích Thúi",
               children: [],
             },
           ],
@@ -131,9 +180,11 @@ const FamilyTree = () => {
           <img src={TreeImg}></img>
           <img src={FaceImg} style={{ marginRight: 5 }}></img>
           <span style={{ color: "red" }}>
-            Đời thứ {node.id.split("_").length}:
+            Đời t{node.id.split("_").length}:
           </span>{" "}
           {node.name}
+          {node.details && node.details.h && <span> - {node.details.h}</span>}
+          {node.details && node.details.w && <span> - {node.details.w}</span>}
         </div>
 
         <div>
