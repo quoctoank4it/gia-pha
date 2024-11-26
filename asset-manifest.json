@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/gia-pha/static/css/main.42f197f4.css",
-    "main.js": "/gia-pha/static/js/main.22e13023.js",
+    "main.js": "/gia-pha/static/js/main.c21546fa.js",
     "static/js/453.439c320a.chunk.js": "/gia-pha/static/js/453.439c320a.chunk.js",
     "static/media/bg_banner.gif": "/gia-pha/static/media/bg_banner.bcfc2aafbd137918e260.gif",
     "index.html": "/gia-pha/index.html",
     "main.42f197f4.css.map": "/gia-pha/static/css/main.42f197f4.css.map",
-    "main.22e13023.js.map": "/gia-pha/static/js/main.22e13023.js.map",
+    "main.c21546fa.js.map": "/gia-pha/static/js/main.c21546fa.js.map",
     "453.439c320a.chunk.js.map": "/gia-pha/static/js/453.439c320a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.42f197f4.css",
-    "static/js/main.22e13023.js"
+    "static/js/main.c21546fa.js"
   ]
 }
