@@ -164,7 +164,7 @@ const FamilyTree = () => {
     const navigate = useNavigate();
 
     const handleClick = (id) => {
-      navigate(`/${id}`);
+      navigate(`/gia-pha/${id}`);
     };
 
     return (

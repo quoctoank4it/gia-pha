@@ -14,8 +14,8 @@ function App() {
         </div>
         <Router>
           <Routes>
-            <Route path="/" element={<FamilyTree />} />
-            <Route path="/:id" element={<PersonDetail />} />
+            <Route path="/gia-pha/" element={<FamilyTree />} />
+            <Route path="/gia-pha/:id" element={<PersonDetail />} />
           </Routes>
         </Router>
       </div>
